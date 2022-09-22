@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        body{
+            padding:20px;
+            background-color: grey;
+            text-align: justify;
+            font-family: Arial, sans-serif;
+            margin:auto;
+            width: 700px;
+        }
+        img{
+            border-radius: 2em;
+            width:700px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS - Rocketseat</h1>
+
+    <p></p>
+    <h2>Variáveis</h2>
+    <p>As palavras reservadas para variáveis são "let, const e var". A diferença entre elas é que var e let podem mudar, mas const não. Uma vez que atribuirmos uma variável usando a palavra reservada "const", ela não pode ser alterada.</p>
+    <p>Lembre-se que os comandos além de serem escritos em maiúscula após cada espaço (getElementById), também podem ser escritos com o snake case (get_element_by_id). Faça o teste.</p>
+    
+    <h2>Acessar dados de uma variável</h2>
+    <pre>
+        const person= {
+            name:'jon',
+            age:30,
+            weight:97.30,
+            isAdmin:true
+        }
+        
+        console.log(person.name)
+    </pre>
+
+
+    <p>Usando pontos podemos definir um caminho até a informação que desejamos. </p>
+    
+    <h3>Acessar dados de uma variável quando array</h3>
+    
+    <pre>
+        const animals= [
+    'Lion',
+    'Monkey',
+    'Cat'
+]
+
+console.log(animals[2])
+    </pre>
+    <p>Devemos definir a posição do termo dentro do array. Lembrando que o array começa a contagem em 0 e não em 1.</p>
+    <p><b>Piorando </b>o mesmo caso:</p>
+    <pre>
+        const animals= [
+    'Lion',
+    'Monkey',
+    {
+        name: 'Lucca',
+        age: 3 + ' aninhos'
+    }
+]
+
+console.log(animals[2].name + ' idade ' + animals[2].age)
+    </pre>
+    <p>
+        Retorno:<br>
+        Lucca idade 3 aninhos
+    </p>
+
+    <h2>Funções JS</h2>
+    <p>Sabemos que o formato de uma função em JS é<br>
+         <b>
+        function nomedela(){<br>
+            }
+    </b></p>
+    <p>Para iniciarmos uma função, basta habilitarmos a mesma na linha do JS - nomedela().</p>
+
+    <p>Ex.:<br>
+    <pre>
+        function notes() {
+        }
+        notes()
+    </pre>
+    Ao chegar na linha "notes()", a função será executada. Podemos repetir esse comando o número de vezes que quisermos que a função seja repetida.
+    </p>
+    <p>
+        <b>Passando parâmetros/argumentos para a função</b><br>
+        <pre>
+            const sum = function(n1,n2){
+                res = n1 + n2
+            }
+            sum(2,3)
+            console.log(res)
+        </pre>
+
+        
+    </p>
+    <p><b>Código estranho abaixo:</b></p>
+    <img src="return12022-09-22 023134.png">
+
+
+
+    <h2>Arrow function com callback</h2>
+    <pre>
+        function feijao (name) {
+            name()
+        }
+        feijao(
+            () => {
+                console.log('Estou em chamada')
+            }
+        )
+    </pre>
+
+    <h2>Function constuctor</h2>
+    <pre>function Person(name){
+        this.name = name
+    }
+    const rodri = new Person('Rodrigo')
+    const joao = new Person ('João')
+    console.log(rodri)
+    console.log(joao)</pre>
+    <p>Retorno:<br> 
+        Person { name: 'Rodrigo' }<br>
+        Person { name: 'João' }</p>
+
+
+<p><b>Alteração na função</b></p>        
+        <pre>
+            function Person(name){
+                this.name = name
+                this.walk = function(){
+                    return "andando"
+                }
+            }
+            const rodri = new Person('Rodrigo')
+            const joao = new Person ('João')
+            console.log(rodri.walk())
+            console.log(joao.walk())
+        </pre>    
+
+
+    <h1 style="text-align:center;">Testes JS</h1>
+    <p><button onclick="clicou()">Cria Frase</button></p>
+   
+
+    <script src="functions.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,1 @@
+Essa pasta contém anotações a respeito das aulas de JS sem uma estilização visual/estética adequada.
