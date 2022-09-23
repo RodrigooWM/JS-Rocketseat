@@ -79,7 +79,7 @@ feijao(
 function Person(name){
     this.name = name
     this.walk = function(){
-        return "andando"
+        return "está andando"
     }
 }
 const rodri = new Person('Rodrigo')
@@ -88,7 +88,22 @@ console.log(rodri.walk())
 console.log(joao.walk()) 
 */
 
+/*
 let date = new Date("2022-09-27")
 
 
-console.log(date)
+console.log(date)*/
+
+/*
+let string = '200.6564'
+console.log(Number(string).toFixed(3).replace(".",","))
+
+let number = 2321654.654897987
+console.log(String(number))
+
+
+*/
+
+
+let palav = "Nossa senhora é legal demais"
+console.log(palav.toLowerCase())

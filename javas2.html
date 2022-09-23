@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            padding:20px;
+            background-color: grey;
+            text-align: justify;
+            font-family: Arial, sans-serif;
+            margin:auto;
+            width: 700px;
+        }
+        img{
+            border-radius: 2em;
+            width:700px;
+            height: 200px;
+        }
+    </style>
+    <title>JS 2</title>
+   
+</head>
+<body>
+    <H2>Prototype</H2>
+    <p>Usa-se o elemento, termo, etc + Ponto (.) para indicar um prototype.</p>    
+    <h2>Type <u>conversion, casting</u> x <u>coersion</u></h2>
+    <p><b>type conversion</b> ou <b>type casting</b> ocorre quando alteramos manualmente o tipo de um elemento no código.</p>
+    <p>Ex.: <u>Number('200')</u> &rarr; Estamos transformando uma string em um number.</p>
+    <p><b>type coersion</b> ocorre quando o próprio js altera o tipo de um elemento no código.</p>
+    <p>Ex.: <u>console.log('200' + 100)</u> &rarr; O número 100 virará uma string ao ser apresentado na tela.</p>
+    <h3> Quando usamos? </h3>
+    <p>Podemos alterar os tipos por diversos motivos. O principal deles é quando precisamos identificar o comprimento (length)de uma sequência numérica. Para isso, a sequência numérica deve ser alterada para string antes.</p>
+    <h2>Casas decimais</h2>
+    <p>Usamos o método "toFixed(número de casas)" para determinar o número de casas decimais que um número terá.</p>
+    <p>Ex.:
+        <pre>
+        let string = '200.6564'
+        console.log(Number(string).toFixed(3))
+
+        Retorna: 200.656    
+        </pre>  
+
+    </p>
+    <p>Se quisermos trocar o ponto pela vírgula, usamos o comando <b>.replace(".",",")</b> Ex.: console.log(Number(string).toFixed(3).replace(".",","))</p>
+
+    <h2>Texto em caixa alta ou baixa</h2>
+    <p>var.toUpperCase() / var.toLowerCase()</p>
+</body>
+</html>
