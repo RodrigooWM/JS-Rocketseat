@@ -18,6 +18,9 @@
             width:700px;
             height: 200px;
         }
+        pre{
+            font-size: 1.5em;
+        }
     </style>
     <title>JS 2</title>
    
@@ -47,5 +50,134 @@
 
     <h2>Texto em caixa alta ou baixa</h2>
     <p>var.toUpperCase() / var.toLowerCase()</p>
+
+    <h2>Separando strings</h2>
+    <p>
+
+        <pre>
+            let  frase = 'Quero sair do Brasil.'
+            let myArray = frase.split(" ") (Dessa forma a separação será feita de acordo com cada espaço em branco que houver.)
+            console.log(myArray)
+        </pre>
+        Retorno: <b>[ 'Quero', 'sair', 'do', 'Brasil.' ]</b>
+
+        <br><br>Podemos separar também usando um elemento da frase:
+
+        <pre>
+            let  frase = 'Quero sair do Brasil.'
+            let myArray = frase.split("do")
+            console.log(myArray)
+        </pre>
+        Retorno: <b>[ 'Quero sair ', ' Brasil.' ]</b>
+
+        <br><br>Mais um exemplo:
+        <pre>
+            let  frase = 'Quero sair do Brasil.'
+            let myArray = frase.split("a")
+            console.log(myArray)
+
+
+        </pre>
+        Retorno: <b>[ 'Quero s', 'ir do Br', 'sil.' ]</b>
+        </p>
+
+
+        <p>Podemos também separar uma frase acrescentando sinais, da seguinte forma:
+
+            <pre>
+        let frase = "Eu quero sair do Brasil!"
+        let myArray = frase.split(" ")
+        let sepfrase = myArray.join("_")
+        console.log(sepfrase)
+            </pre><br>
+            Retorno: Eu_quero_sair_do_Brasil!<br>
+            Obs.: O underline (_) também pode ser trocado por outros elementos.
+
+
+        </p>
+
+        <h2>Encontrando elementos em um texto:</h2>
+        <p>
+            Usamos o comando var.includes("termo que queremos encontrar").
+
+        </p>
+        <p>
+            Ex.:<br>
+            <pre>
+                let frase = "Eu quero sair do Brasil!"
+                console.log(frase.includes("sair"))
+            </pre>
+            <br>
+            Retorno: <b>true</b>
+            <br>
+
+            Obs.: O elemento difere com maiúsculas e minúsculas.
+        </p>
+
+        <h2> Criando um Array com construtor</h2>
+        <p>
+            <pre>
+                let myArray=new Array ('a','b','c','d')
+                console.log(myArray)    
+            </pre>
+
+            <b>Contando elementos no array:</b> <br>
+            <pre>
+                console.log([
+                "a",
+                {type:"array"},
+                function(){return "ola dev!"},
+                "b","c","d","e"][2]())
+            </pre>
+            <br>
+            Obs.: Para contar os elementos usamos o comando .length <br>
+            Nesse caso, estamos retornando a terceira posição do array, e executando a função através dos parênteses, pois nessa posição há uma função.
+        </p>
+
+        <h2>Transformando string em array</h2>
+        <p>
+            <pre>
+                let pal = "mudando para array" 
+                console.log(Array.from(pal))
+            </pre>
+            <br>
+            Retorno: 
+            <pre>
+                
+                [
+                  'm', 'u', 'd', 'a', 'n',
+                  'd', 'o', ' ', 'p', 'a',
+                  'r', 'a', ' ', 'a', 'r',
+                  'r', 'a', 'y'
+                ]
+            </pre>
+        </p>
+
+        <h2>Manipulando arrays</h2>
+
+        <p>Os comandos abaixo representam a inserção de elementos, remoção, identificação da posição, etc. Revise e pratique.</p>
+        <pre>
+            let techs = ["html","css","js"]
+    techs.push("React")
+    techs.push("Angular")
+    techs.push("Vue")
+    techs.push("SQL")
+    techs.push("GIT")
+    techs.unshift("React") //Inclui item no inicio do array
+    techs.pop() //Remove o último item do array
+    techs.shift()//Remove o item do começo do array
+    techs.splice(1,2) //Esse comando define que a partir da casa 1, 2 itens serão removidos (Atenção nessa contagem das casas).
+/*
+    console.log(techs.slice(1,3)) //Esse comando exclui os itens que estão entre as casas 1 e 3 (Atenção nessa contagem).
+*/    
+
+    let index = techs.indexOf('html')
+    console.log(techs)
+    console.log(`Na sequência "${techs}", o html está na posição ${index}`)
+    techs.splice(index, 1)
+    console.log(techs)
+        </pre>
+
+
 </body>
 </html>

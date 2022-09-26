@@ -104,6 +104,62 @@ console.log(String(number))
 
 */
 
-
+/*
 let palav = "Nossa senhora é legal demais"
-console.log(palav.toLowerCase())
+console.log(palav.toLowerCase())*/
+/*
+let frase = "Eu quero sair do Brasil!"
+let myArray = frase.split(" ")
+let sepfrase = myArray.join("+")
+console.log(sepfrase.toUpperCase())*/
+
+/*
+let frase = "Eu quero sair do Brasil!"
+console.log(frase.includes("sair"))
+*/
+
+/*
+let meuArray=['a','b','c','d']
+console.log(meuArray)
+console.log(meuArray.join("-").toUpperCase())
+console.log(meuArray.includes("f")) //Perguntando se tem "f" no array. Como não tem, a resposta é falsa.
+*/
+
+/*
+let myArray=new Array ('a','b','c','d')
+console.log(myArray)
+*/
+
+/*
+console.log([
+    "a",
+    {type:"array"},
+    function(){return "ola dev!"},
+    "b","c","d","e"][2]())
+    */
+
+    /*
+    let palavra = "mudando para array" 
+    console.log(Array.from(palavra))
+    */
+
+    let techs = ["html","css","js"]
+    techs.push("React")
+    techs.push("Angular")
+    techs.push("Vue")
+    techs.push("SQL")
+    techs.push("GIT")
+    techs.unshift("React") //Inclui item no inicio do array
+    techs.pop() //Remove o último item do array
+    techs.shift()//Remove o item do começo do array
+    techs.splice(1,2) //Esse comando define que a partir da casa 1, 2 itens serão removidos (Atenção nessa contagem das casas).
+/*
+    console.log(techs.slice(1,3)) //Esse comando exclui os itens que estão entre as casas 1 e 3 (Atenção nessa contagem).
+*/    
+
+    let index = techs.indexOf('html')
+    console.log(techs)
+    console.log(`Na sequência "${techs}", o html está na posição ${index}`)
+    techs.splice(index, 1)
+    console.log(techs)
+
