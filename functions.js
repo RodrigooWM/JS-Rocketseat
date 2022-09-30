@@ -107,6 +107,7 @@ console.log(String(number))
 /*
 let palav = "Nossa senhora é legal demais"
 console.log(palav.toLowerCase())*/
+
 /*
 let frase = "Eu quero sair do Brasil!"
 let myArray = frase.split(" ")
@@ -142,7 +143,7 @@ console.log([
     let palavra = "mudando para array" 
     console.log(Array.from(palavra))
     */
-
+    /*
     let techs = ["html","css","js"]
     techs.push("React")
     techs.push("Angular")
@@ -150,16 +151,68 @@ console.log([
     techs.push("SQL")
     techs.push("GIT")
     techs.unshift("React") //Inclui item no inicio do array
-    techs.pop() //Remove o último item do array
+    techs.pop() //Remove o último item do final do array
     techs.shift()//Remove o item do começo do array
     techs.splice(1,2) //Esse comando define que a partir da casa 1, 2 itens serão removidos (Atenção nessa contagem das casas).
+    */
 /*
     console.log(techs.slice(1,3)) //Esse comando exclui os itens que estão entre as casas 1 e 3 (Atenção nessa contagem).
 */    
-
+/*
     let index = techs.indexOf('html')
     console.log(techs)
     console.log(`Na sequência "${techs}", o html está na posição ${index}`)
     techs.splice(index, 1)
     console.log(techs)
+
+    console.log(techs.slice(1,3))
+   */
+
+/*
+    let name = new String("Rodrigo")
+    name.lastname= "Araújo"
+    let age = new Number(27)
+    console.log(name,age)
+
+    let dia = new Date ('2022-09-29')
+    console.log(dia)
+*/
+
+/* DELETE PONTO ALGUMA COISA...
+
+const person = {
+        name: "Rodrigo",
+        idade: 27,
+}
+
+console.log(person)
+delete person.idade
+
+console.log(person)
+
+   */
+
+// Incremento e exponencial
+/* 
+let f = 5
+
+console.log(f++)
+console.log(f)
+
+let exp = 5
+let x = exp**2
+console.log (x)
+*/
+
+/*
+let one = 1
+let two = 2
+
+console.log(one == 1)
+*/
+
+// CONCATENA E VIRA STRING
+let conc = 1 + '2'
+console.log(conc)
+console.log(typeof conc)
 
