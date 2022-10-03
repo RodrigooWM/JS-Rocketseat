@@ -212,7 +212,53 @@ console.log(one == 1)
 */
 
 // CONCATENA E VIRA STRING
+
+/*
+
 let conc = 1 + '2'
 console.log(conc)
 console.log(typeof conc)
 
+*/
+
+/*
+let one = 1
+let two = 2
+
+console.log(one<=two)
+console.log(1 <= 2)
+console.log(2 > 3)
+
+*/
+/*
+let pao = true
+let queijo = false
+let presunto = false
+
+if(!pao || queijo){
+    console.log('lanche de pao e queijo')
+}else if (pao && presunto) {
+    console.log('lanche de pao e presunto')
+}else {
+    console.log('não vou comer')
+}
+
+const nicecafe = pao || queijo ? 'top' : 'não top'
+console.log(nicecafe)
+*/
+
+/*
+const idade = 15
+let candrive = idade>=16 ? 'Tem idade para dirigir' : 'Não tem idade para dirigir'
+console.log(candrive)
+*/
+/*
+let dog = 'cachorro'
+console.log(dog+' muito fofo')
+*/
+
+/*
+console.log( 3  ?   'verdadeiro':'falso')
+*/
+
+console.log(2+5*10)
