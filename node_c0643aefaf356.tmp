@@ -333,38 +333,10 @@ console.log('Fim da execução')
 
 //FOR, WHILE, FOR OF, FOR IN
 
-/*
-for(let i = 10; i > 0;i -=1){
-    if(i < 2 ) {
+for(let i = 10; i <= 100;i -=1){
+    if(i > 50) {
         break;
     }
 console.log(i)
 }
-*/
-/*
-let i=260;
-while(i>0){
-    i/=2;
- 
-console.log(i);
-}
-*/
-/*
-let name = 'mayk';
-let names=['joao','marcos','pedro',30,50,60,80];
 
-for( peak of names){
-    console.log(peak)
-}
-*/
-let person = {
-    Name:'Roger',
-    Age:30+' years',
-    Weight:90+' kg'
-
-}
-
-for(prop in person){
-    console.log(prop)
-    console.log(person[prop])
-}

@@ -96,8 +96,32 @@ When Number is called as a constructor (with new), it creates a Number object, w
         </ol>
     </p>
 
-
-
+    <h2>Switch</h2>
+    <p>
+        <pre>
+            function calculate(n1,op,n2){
+    
+                let result
+            
+                switch(op){
+                    case '+': result = n1 + n2
+                        break;
+                    case '-': result = n1 - n2
+                        break;
+                    case '*': result = n1 * n2
+                        break;
+                    case '/': result = n1 / n2
+                        break;
+                    default: console.log('Operação não encontrado')
+                        break;
+                }
+                return result
+            }
+            
+            console.log(calculate(4,'**',4))
+        </pre>
+        O código acima retornará a operação de acordo com o sinal que for inserido na execução da função (bem ali no final do código).
+    </p>
 
     <a href="javas1.html"><h2>Parte 1 da Luta diária</h2></a>
     <a href="javas2.html"><h2>Parte 2 da Luta diária</h2></a>
